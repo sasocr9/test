@@ -16,7 +16,7 @@ const App = () => {
           limit: 20
         };
 
-        const response = await axios.post('http://localhost:5000/api/games', requestBody);
+        const response = await axios.post('https://your-vercel-project-url.vercel.app/api/games', requestBody);
         setGames(response.data);
         setLoading(false);
       } catch (error) {
